@@ -1,0 +1,71 @@
+Класс Scanner (полное имя java.util.Scanner) умеет считывать данные из разных источников: консоль, файлы, интернет.
+
+Scanner console = new Scanner(System.in);
+// тоже что String str = "текст";
+// объявление переменной типа Scanner по имени console (вместо console можно  s)
+// = Создаем новый объект (слово new) типа Scanner и передаем в него в качестве
+// параметра то, из чего новосозданный объект Scanner будет брать данные — объект System.in.
+Scanner console = new Scanner(System.in);   Создаем объект класса Scanner.
+String name = console.nextLine();           Читаем с клавиатуры строку текста.
+int age = console.nextInt();                Читаем с клавиатуры число.
+-------------------------------
+
+
+//------Пример
+import java.util.Scanner;
+public class Solution {
+   public static void main(String[] args)
+   {
+      Scanner console = new Scanner(System.in);
+      String name = console.nextLine();
+      int age = console.nextInt();
+
+      System.out.println("Name: " + name);
+      System.out.println("Age: " + age);
+      // закрытие объекта
+      console.close();
+   }
+}
+
+Методы класса Scanner
+Метод	         Описание
+nextByte()     Считывает данные и преобразует их в тип byte
+nextShort()    Считывает данные и преобразует их в тип short
+nextInt()      Считывает данные и преобразует их в тип int
+nextLong()     Считывает данные и преобразует их в тип long
+nextFloat()    Считывает данные и преобразует их в тип float
+nextDouble()   Считывает данные и преобразует их в тип double
+nextBoolean()  Считывает данные и преобразует их в тип boolean
+next()         Считывает одно «слово». Слова разделяются пробелами или enter
+nextLine()     Считывает целую строку
+
+//методы, которые позволяют проверить тип еще не считанных данных (чтобы знать, каким методом их считывать).
+Метод	            Описание
+hasNextByte()     Там тип byte? Его можно будет преобразовать к byte?
+hasNextShort()    Там тип short? Его можно будет преобразовать к short?
+hasNextInt()      Там тип int? Его можно будет преобразовать к int?
+hasNextLong()     Там тип long? Его можно будет преобразовать к long?
+hasNextFloat()    Там тип float? Его можно будет преобразовать к float?
+hasNextDouble()   Там тип double? Его можно будет преобразовать к double?
+hasNextBoolean()  Там тип boolean? Его можно будет преобразовать к boolean?
+hasNext()         Там есть еще одно слово?
+hasNextLine()     Там есть еще одна строка?
+
+//-------Пример
+public class Main {
+
+   public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Введите число:");
+
+       if (sc.hasNextInt()) {
+           int number = sc.nextInt();
+           System.out.println("Спасибо! Вы ввели число " + number);
+       } else {
+           System.out.println("Извините, но это явно не число. Перезапустите программу и попробуйте снова!");
+       }
+       // закрытие объекта
+       console.close();        
+   }
+}

@@ -1,0 +1,9 @@
+public class Main {
+
+    public static void main(String[] args){
+        System.out.print("Mesa called Jar Jar Binks, mesa your humble servant!");
+        System.out.println("Mesa called Jar Jar Binks, mesa your humble servant!");
+        System.out.print("1 string\n" + "2 string\n");
+
+    }
+}

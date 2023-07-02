@@ -1,0 +1,27 @@
+public class <name_class>
+{
+   public static void main (String[] args){
+   
+   }
+}
+
+
+
+1 - Каждая команда с новой строки
+2 - class.metod.command
+    команда внутри функции, функция внутри класса
+3 - Минимальная программа — один класс
+4 - Для каждого класса заводится отдельный файл, имя которого совпадает с именем класса.
+a и b — это переменные, а main и pi — это методы.
+public class House {
+    int a;
+    int b;
+
+    public static void main (String[] args){
+       System.out.print(1);
+    }
+
+    public static double pi (){
+       return 3.14;
+    }
+}

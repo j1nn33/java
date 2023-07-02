@@ -1,0 +1,8 @@
+// запуск программы через командную строку
+
+cd java/kurs_started/1_programm/
+// компиляция программы
+javac Main.java
+// запуск программы
+java Main
+Mesa called Jar Jar Binks, mesa your humble servant!
