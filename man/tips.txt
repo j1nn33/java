@@ -1,0 +1,12 @@
+Плагин Key Promoter X
+
+psvm  Public static void main(String[] args)
+sout  System.out.println
+
+Оборачивание: Ctrl+Alt+T
+  Выделить код, который вы хотите обернуть другим кодом
+  Нажать Ctrl+Alt+T
+  Выбрать один из вариантов оборачивания
+
+
+Стиль кода: Ctrl+Alt+L
