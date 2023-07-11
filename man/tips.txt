@@ -10,3 +10,5 @@ sout  System.out.println
 
 
 Стиль кода: Ctrl+Alt+L
+
+Class_TYPE Object = Значение объекта
