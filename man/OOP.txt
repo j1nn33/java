@@ -11,6 +11,34 @@ class Gungans {
         System.out.printf("Name: %s", name);
     }
 }
+-----------------------------------------------------------------
+Структура
+
+public class task2 {
+    public static void main(String[] args) {
+        // создание объектвов Zam, Dron и сохранение ссылок на них в переменные zam, dron
+        Zam zam = new Zam();
+        Dron dron = new Dron();
+        // ссылка на ранее созданный объект Dron
+        zam.spy = dron;
+        // ссылка на ранее созданный объектZ am
+        dron.hunter = zam;
+
+    }
+    // создание классов
+    public static class Zam{
+        public int a,b;
+        public Dron spy;
+
+    }
+    public static class Dron{
+        public int a,b;
+        public Zam hunter;
+
+    }
+}
+
+-----------------------------------------------------------------
 
 /* Описание с помощью классов
 - владелец животного
@@ -20,6 +48,7 @@ class Gungans {
      - имеет вид
      - имеет цвет
 */
+
 
 public class Main {
     public static void main(String[] args){
