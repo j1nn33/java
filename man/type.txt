@@ -1,0 +1,24 @@
+// узнать тип пеерменной 
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int testvar = 1.1;
+        // узнаем тип переменной
+        testvarclass (testvar);;
+    }
+
+    public static void test(Object value) {
+        if (value instanceof Integer) {
+            System.out.println("Это Integer");
+        } else if (value instanceof String) {
+            System.out.println("Это String");
+        } else if (value instanceof Float) {
+            System.out.println("Это Float");
+        } else if (value instanceof Double) {
+            System.out.println("Это Double");
+        }
+    }
+}

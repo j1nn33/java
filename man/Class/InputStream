@@ -1,0 +1,23 @@
+import java.io.*;
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String phrase = bufferedReader.readLine();
+
+        System.out.println(phrase);
+    }
+}
+
+--------------------------------------
+
+InputStream - базовый класс, который определяет входной поток
+System - класс обеспечивает взаимодействие с консолью
+in - объект отвечает за создание ввода
+inputStream - сюда попадает все что ввели с клавиатуры
+(иформация в виде байтов чтобы получить инфу в виде символов делает строка снизу)
+Reader inputStreamReader = new InputStreamReader(inputStream)
+BufferedReader - для увеличения производительности
+readLine- чтение по строчно
